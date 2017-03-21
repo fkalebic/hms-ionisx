@@ -1,0 +1,135 @@
+body,
+.view-login,
+.view-register,
+.view-passwordreset {
+    background-color: @white !important;
+
+    @import 'header.less';
+    @import 'modal.less';
+    @import 'footer.less';
+}
+
+/*
+    Additional rules only for the header part - needed some kind of detection the real dashboard site
+    used class generated on the body element
+*/
+body.view-dashboard, body.view-account-settings, body.view-course-about {
+    .wrapper-course-material-dashboard {
+        z-index: 10;
+        margin: 0;
+    }
+    ol.course-tabs {
+        margin-left: 10px;
+
+        .user-dd {
+            height: auto;
+            padding: 0;
+            border-bottom: none;
+            box-shadow: none;
+
+            .primary {
+                max-height: 48px;
+
+                .dropdown {
+                    outline: none;
+
+                    .fa {
+                        position: relative;
+                        bottom: 4px;
+                        margin-left: 15px;
+                    }
+                }
+                .dropdown-menu {
+                    margin-top: 5px;
+                    padding: 5px 30px;
+
+                    .dropdown-item {
+                        min-width: 120px;
+                    }
+
+                    a {
+                        background: none;
+                        padding: 3px 5px 4px;
+                        text-transform: uppercase;
+                        color: #c41731;
+
+                        &:active, &:focus, &:hover, &:visited {
+                            background: none;
+                        }
+                    }
+                }
+            }
+            .user-link {
+                display: block;
+                padding: 10px 13px 12px;
+                border-radius: 3px;
+                color: #8C8179;
+                font-size: 16px;
+                font-weight: normal;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover, &:focus {
+                    background-color: #f6f6f6;
+                    color: #333;
+                }
+            }
+        }
+    }
+    header.global {
+        nav {
+            padding-bottom: 0 !important;
+
+            ol.user {
+                display: none;
+            }
+        }
+    }
+}
+
+.announcements-dashboard-wrapper{
+    z-index: -10;
+}
+
+.help-tab {
+  a:link, a:visited {
+    &:hover, &:focus {
+      color: $white;
+      background: #c41731;
+    }
+  }
+}
+
+.help-buttons {
+
+  #feedback_link_problem {
+    border-radius: 0 0 0 0 !important;
+    border: 1px solid #c8c8c8 !important;
+  }
+
+  #feedback_link_question {
+    border-radius: 0 0 0 0 !important;
+    border: 1px solid #c8c8c8 !important;
+  }
+
+  feedback_link_suggestion {
+    border-radius: 0 0 0 0 !important;
+    border: 1px solid #c8c8c8 !important;
+  }
+
+  a:link, a:visited {
+    &:hover, &:focus {
+      color: $white;
+      background: #c41731;
+      border: 1px solid #c41731;
+    }
+  }
+}
+
+.xmodule_display{
+    .xmodule_HtmlModule {
+        h2 {
+            -webkit-font-smoothing: auto;
+        }
+    }
+}

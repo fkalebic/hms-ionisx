@@ -1,0 +1,106 @@
+> .activation {
+    padding: 30px 0 !important;
+
+    section.tos {
+        height: 200px;
+        border: none;
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+        border: 1px solid #ddd;
+        padding: 10px!important;
+            
+        #terms-and-conditions {
+            padding: 20px;
+            .lists {
+                margin-bottom: 50px;
+                
+                ul {
+                    list-style: none;
+                    padding-left: 20px;
+                    
+                    li {
+                        font-size: 12px;
+                    }
+                }
+            }
+            h3 {
+                font-size: 14px;
+            }
+            p {
+                font-size: 12px;
+            }
+            
+        }
+    }
+    .ionisx-container();
+
+    margin-top: @layout-top-spacing;
+
+    .message {
+        .square(auto);
+
+        margin: 0;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+        border-radius: 0;
+        border: 0 none;
+        font: inherit;
+
+        h1 {
+            margin-top: 0;
+            padding: 0 0 0 20px;
+            color: #a51c30;
+            text-align: left;
+            border-bottom: 2px solid #bdb6b2 !important;
+
+            &.valid {
+                background: none;
+                border: 0 none;
+                //color: inherit;
+            }
+        }
+
+        p {
+            padding-left: 20px;
+        }
+
+        hr {
+            display: none;
+        }
+    }
+    
+    .no-padding {
+        padding: 0 !important;
+    }
+    
+    .form-group {
+        label {
+            font-size: 14px;
+            
+            input {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+
+.messages {
+    text-align: center;
+    
+    &.type-error {
+        background-color: red;
+        color: #ffffff;
+    }
+    &.type-success {
+        background-color: lightgreen;
+    }
+    
+    p {
+        margin: 5px 0;
+    }
+}
